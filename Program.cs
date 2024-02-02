@@ -13,11 +13,11 @@ int inputNumber = 0;
 while (isInicio)
 {
     Console.Write("Digite um numero (max. 6 digitos): ");
-    inputNumber = int.Parse(Console.ReadLine());
+    inputNumber = int.Parse(Console.ReadLine());//usuário entra com o valor
     if (inputNumber > 999999 || inputNumber < 0)
     {
         Console.Clear();
-        Console.Write("Burro!\nPressione qualquer tecla para continuar...");
+        Console.Write("Digite um numero com menos de 7 digitos!\nPressione qualquer tecla para continuar...");
         Console.ReadKey();
     }
     else
@@ -197,12 +197,12 @@ for (i = 1; i <= inputNumber; i++)
 int fim;
 fim = escolhe switch
 {
-    0 => h,//Console.WriteLine("H");
-    1 => j,//Console.WriteLine("J");
-    2 => k,//Console.WriteLine("K");
-    3 => l,//Console.WriteLine("L");
-    4 => m,//Console.WriteLine("M");
-    _ => n,//Console.WriteLine("N");
+    0 => h,//Console.WriteLine(h);
+    1 => j,//Console.WriteLine(j);
+    2 => k,//Console.WriteLine(k);
+    3 => l,//Console.WriteLine(l);
+    4 => m,//Console.WriteLine(m);
+    _ => n,//Console.WriteLine(n);
 };
 
 Console.WriteLine("O termo e' {0}", fim);
